@@ -2,7 +2,10 @@ module github.com/musgit-dev/musgit-server
 
 go 1.24.2
 
-require github.com/gin-gonic/gin v1.10.1
+require (
+	github.com/gin-gonic/gin v1.10.1
+	github.com/musgit-dev/musgit v0.0.3
+)
 
 require (
 	github.com/bytedance/sonic v1.11.6 // indirect
@@ -24,7 +27,6 @@ require (
 	github.com/mattn/go-sqlite3 v1.14.22 // indirect
 	github.com/modern-go/concurrent v0.0.0-20180306012644-bacd9c7ef1dd // indirect
 	github.com/modern-go/reflect2 v1.0.2 // indirect
-	github.com/musgit-dev/musgit v0.0.1 // indirect
 	github.com/pelletier/go-toml/v2 v2.2.3 // indirect
 	github.com/twitchyliquid64/golang-asm v0.15.1 // indirect
 	github.com/ugorji/go/codec v1.2.12 // indirect

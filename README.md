@@ -24,7 +24,7 @@ go install github.com/musgit-dev/musgit-server@latest
 
 Start server
 ```
-musgit-server
+musgit-server --db-uri <PATH_TO_DB>
 ```
 
 ## License
