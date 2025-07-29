@@ -1,0 +1,20 @@
+<table>
+  <thead>
+    <tr>
+      <th>Piece</th>
+      <th>Composer</th>
+      <th>Start Date</th>
+      <th>End Date</th>
+      <th>Evaluation</th>
+    </tr>
+  </thead>
+  @for (p of practices$ | async; track p) {
+    <tr>
+      <td>{{ p.piece }}</td>
+      <td>{{ p.composer }}</td>
+      <td>{{ p.startDate | date }}</td>
+      <td>{{ p.endDate | date }}</td>
+      <td>{{ p.progressEvaluation }}</td>
+    </tr>
+  }
+</table>

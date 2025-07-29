@@ -1,0 +1,19 @@
+.piece-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.left {
+}
+.center {
+  justify-self: start;
+}
+.practice-btn {
+  justify-self: end;
+}
+
+.practice-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

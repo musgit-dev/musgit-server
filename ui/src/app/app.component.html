@@ -1,0 +1,18 @@
+<body>
+  <header>
+    <h1>Welcome to {{ title }}</h1>
+  </header>
+  <nav area-label="main">
+    <h2>Browse</h2>
+    <ul>
+      <li><a routerLink="">Home</a></li>
+      <li><a routerLink="composers">Composers</a></li>
+      <li><a routerLink="pieces">Pieces</a></li>
+      <li><a routerLink="practices">Practices</a></li>
+    </ul>
+  </nav>
+  <main>
+    <router-outlet />
+  </main>
+</body>
+<footer><h3>Musgit footer</h3></footer>
