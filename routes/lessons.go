@@ -10,8 +10,8 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
-func lessonRoutes(mg *musgit.Musgit) {
-	lessons := router.Group("/lessons")
+func lessonRoutes(mg *musgit.Musgit, rg *gin.RouterGroup) {
+	lessons := rg.Group("/lessons")
 	lessons.GET("/", func(c *gin.Context) {
 		res := mg.Lesson.GetAll()
 		c.JSON(http.StatusOK, res)

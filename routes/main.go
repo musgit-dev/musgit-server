@@ -18,6 +18,7 @@ func Run(mg *musgit.Musgit) {
 }
 
 func getRoutes(mg *musgit.Musgit) {
-	lessonRoutes(mg)
-	pieceRoutes(mg)
+	api := router.Group("/api")
+	lessonRoutes(mg, api)
+	pieceRoutes(mg, api)
 }

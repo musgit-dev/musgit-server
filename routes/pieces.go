@@ -18,9 +18,9 @@ type Piece struct {
 	Complexity int64  `form:"complexity"`
 }
 
-func pieceRoutes(mg *musgit.Musgit) {
+func pieceRoutes(mg *musgit.Musgit, rg *gin.RouterGroup) {
 	{
-		pieces := router.Group("/pieces")
+		pieces := rg.Group("/pieces")
 		pieces.GET("/", func(c *gin.Context) {
 			res := mg.Piece.GetAll()
 			c.JSON(http.StatusOK, res)
