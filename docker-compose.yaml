@@ -1,0 +1,17 @@
+version: "3"
+
+services:
+  backend:
+    build:
+      context: .
+    image: musgit
+    container_name: musgit
+    environment:
+      - MUSGIT_DB_URI=/app/musgit.db
+      - GIN_MODE=release
+    ports:
+      - "8080:8080"
+    network_mode: "host"
+    volumes:
+      - "${MUSGIT_DB_URI}:/app/musgit.db"
+    restart: unless-stopped
